@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hub</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+    <main>
+        <div id="main_container">
+            <div id="output_container">
+                <h1 id="output">0</h1>
+            </div>
+            <div id="content_container">
+                <div class="linhas">
+                    <div class="itens"><button class="numbers" id="seven" onclick="input('7')">7</button></div>
+                    <div class="itens"><button class="numbers" id="eight" onclick="input('8')">8</button></div>
+                    <div class="itens"><button class="numbers" id="nine" onclick="input('9')">9</button></div>
+                    <div class="itens"><button id="division" onclick="input('/')">÷</button></div>
+                </div>
+                <div class="linhas">
+                    <div class="itens"><button class="numbers" id="four" onclick="input('4')">4</button></div>
+                    <div class="itens"><button class="numbers" id="five" onclick="input('5')">5</button></div>
+                    <div class="itens"><button class="numbers" id="six" onclick="input('6')">6</button></div>
+                    <div class="itens"><button id="X" onclick="input('*')"><i class="bi bi-x"></i></button></div>
+                </div>
+                <div class="linhas">
+                    <div class="itens"><button class="numbers" id="one" onclick="input('1')">1</button></div>
+                    <div class="itens"><button class="numbers" id="two" onclick="input('2')">2</button></div>
+                    <div class="itens"><button class="numbers" id="three" onclick="input('3')">3</button></div>
+                    <div class="itens"><button id="plus" onclick="input('+')"><i class="bi bi-plus"></i></button></i></div>
+                </div>
+                <div class="linhas">
+                    <div class="itens"><button id="backspace" onclick="backspace()"><i class="bi bi-backspace"></i></button></div>
+                    <div class="itens"><button class="numbers" id="zero" onclick="input('0')">0</button></div>
+                    <div class="itens"><button id="comma" onclick="input('.')">,</button></div>
+                    <div class="itens"><button id="minus" onclick="input('-')">-</button></div>
+                </div>
+                <div id="linha-5">
+                    <div id="igual"><button onclick="calculation()">=</button></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
